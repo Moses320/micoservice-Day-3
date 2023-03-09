@@ -158,11 +158,10 @@
   <path value="C:/Users/robel/.m2/repository/org/junit/platform/junit-platform-engine/1.9.2/junit-platform-engine-1.9.2.jar"/>
  </paths>
  <validation>
-  <core validator-id="jboss.cdi.core"/>
   <el>
-   <linked-el length="23" name="%0" offset="1460" path="%1"/>
-   <linked-el length="23" name="%2" offset="1460" path="%1"/>
-   <linked-el length="23" name="%3" offset="1460" path="%1"/>
+   <linked-el length="23" name="%0" offset="1634" path="%1"/>
+   <linked-el length="23" name="%2" offset="1634" path="%1"/>
+   <linked-el length="23" name="%3" offset="1634" path="%1"/>
   </el>
  </validation>
  <aliases>

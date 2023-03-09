@@ -6,6 +6,8 @@ import com.craftEmployee.service.ReturnObject.ResponseObjects;
 import com.craftEmployee.service.model.Employee;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -30,7 +32,7 @@ public class EmployeeService {
 	@Autowired
 	RestTemplate restTemplate;
 	
-	public ResponseObjects  reponse(Long id) {
+	public ResponseEntity<?>  reponse(Long id) {
 		
 		
 		Employee employee=employeeRepo.findByEmployeeId(id);
@@ -44,7 +46,7 @@ public class EmployeeService {
 		
 		responseObjects.setDepartment(department);
 		responseObjects.setEmployee(employee);
-		return  responseObjects;
+		return  new ResponseEntity<Object>(responseObjects,HttpStatus.OK);
 		
 		
 	}
